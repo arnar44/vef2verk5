@@ -1,1 +1,36 @@
-/* útfæra */
+.svidtrue{
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.svidfalse{
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.svidtrue:before {
+    content: "- ";
+}
+
+.svidfalse:before{
+    content: "+ "
+}
+.department {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {background-color: #eee;}

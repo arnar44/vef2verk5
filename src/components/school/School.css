@@ -1,1 +1,8 @@
 /* útfæra */
+.none {
+    display: none;
+}
+
+.home {
+    margin-top: 20px;
+}

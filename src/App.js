@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
-import { Route, Link, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
@@ -14,7 +13,16 @@ class App extends Component {
 
     return (
       <main className="app">
-        <p>útfæra</p>
+        <Navigation />
+
+        <section>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/:department" component={School} />
+            <Route component={NotFound} />
+          </Switch>
+        </section>
+
       </main>
     );
   }

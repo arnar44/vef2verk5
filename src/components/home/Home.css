@@ -1,1 +1,11 @@
-/* útfæra */
+.stat{
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.statName{
+    font-weight: bold;
+}
+
